@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Posts CRUD-1</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-6">
+                <h3 class="text-white">Subject Todo Management</h3>
+            </div>
+            <div class="col-2 offset-4">
+                <button id="addSubject" class="btn btn-danger shadow mt-2">Add Subject</button>
+            </div>
+
+            <div class="col-6 offset-3 d-none todoFormParent" id="todoFormParent">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="todoForm">
+                            <label class="" for="todoControl"><b>Subject</b></label>
+                            <input class="mb-4 form-control" id="todoControl" type="text" placeholder="e.g Html"
+                                required>
+
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <button id="addBtn" class="btn btn-primary shadow "><b>Add</b></button>
+                                    <button type="button" id="updateBtn"
+                                        class="btn btn-primary shadow d-none"><b>Update</b></button>
+                                </div>
+                                <div>
+                                    <button type="button" id="cancelBtn"
+                                        class="btn btn-danger shadow "><b>Cancel</b></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row mt-5" id="todoContainer">
+            <!-- <div class="col-3"> -->
+            <!-- <div class="card">
+                    <div class="card-body p-2">
+                        <div class="d-flex justify-content-between">
+                            <h5><b>Html</b></h5>
+                            <div>
+                                <i role="button" class="fa-solid fa-pen-to-square p-2 mr-1 text-primary"></i>
+                                <i role="button" class="fa-solid fa-trash p-2 text-danger"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <div class="spinner d-none" id="spinner">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/app.js"></script>
+
+</body>
+
+</html>
